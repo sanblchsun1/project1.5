@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          src="img/logo_img.png"
+          alt="логотип компании logo of company"
+          width="30%"
+        />
+      </div>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav_link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav_link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav_link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="form form--login" action="/submit" method="POST">
+        <div class="form__group">
+          <label class="form__label" for="username">Username:</label>
+          <input
+            class="form__input"
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="password">Password:</label>
+          <input
+            class="form__input"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <div class="form__group form__group--checkbox">
+          <input
+            class="form__checkbox"
+            type="checkbox"
+            id="remember"
+            name="remember"
+          />
+          <label class="form__label form__label--checkbox" for="remember"
+            >Remember me</label
+          >
+        </div>
+
+        <div class="form__group">
+          <button class="form__button form__button--submit" type="submit">
+            Login
+          </button>
+        </div>
+      </form>
+    </header>
+
+    <main class="content">
+      <section class="content__section">
+        <h1 class="content__title--primary">Welcome to My BEM Page</h1>
+        <p class="content__text--secondary">
+          This is a simple example of a web page structured with BEM methodology
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">&copy; 2024 My First BEM Page</p>
+    </footer>
+  </body>
+</html>
